@@ -1,0 +1,25 @@
+{
+  "model": "ssdlite320_mobilenet_v3_large",
+  "imgsz": 320,
+  "half": false,
+  "n_images": 5000,
+  "mAP50-95": 0.21267618394458074,
+  "mAP50": 0.343162032324114,
+  "mAP75": 0.22070537421472844,
+  "AP_small": 0.010823706822081447,
+  "AP_medium": 0.20156071028026065,
+  "AP_large": 0.4436104135629858,
+  "AR100": 0.33383593948131507,
+  "latency_ms": {
+    "total": {
+      "median": 27.64623999792093,
+      "p95": 33.14675894926041
+    }
+  },
+  "fps_total": 36.171284054366986,
+  "peak_gpu_mem_mb": 33.26611328125,
+  "params_M": 3.44006,
+  "precision_mode": "fp32",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch": "2.6.0+cu124"
+}

@@ -1,0 +1,25 @@
+{
+  "model": "detr_resnet50",
+  "imgsz": 800,
+  "half": false,
+  "n_images": 5000,
+  "mAP50-95": 0.42056486518715536,
+  "mAP50": 0.6229838080365965,
+  "mAP75": 0.4421272648767025,
+  "AP_small": 0.2132544211304954,
+  "AP_medium": 0.4592802260605284,
+  "AP_large": 0.6102086473971615,
+  "AR100": 0.5696801774779989,
+  "latency_ms": {
+    "total": {
+      "median": 91.7279690002033,
+      "p95": 109.02983610285446
+    }
+  },
+  "fps_total": 10.901800300383666,
+  "peak_gpu_mem_mb": 476.91357421875,
+  "params_M": 41.524768,
+  "precision_mode": "fp32",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch": "2.6.0+cu124"
+}

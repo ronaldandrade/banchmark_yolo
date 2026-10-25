@@ -1,0 +1,25 @@
+{
+  "model": "ssd300_vgg16",
+  "imgsz": 300,
+  "half": true,
+  "n_images": 5000,
+  "mAP50-95": 0.2506750762669341,
+  "mAP50": 0.4150142455418907,
+  "mAP75": 0.26216431089795733,
+  "AP_small": 0.055066306247770126,
+  "AP_medium": 0.26812872783963776,
+  "AP_large": 0.4349816192434004,
+  "AR100": 0.3645573160461354,
+  "latency_ms": {
+    "total": {
+      "median": 37.17178700026125,
+      "p95": 40.2110385000924
+    }
+  },
+  "fps_total": 26.902123376338402,
+  "peak_gpu_mem_mb": 260.72314453125,
+  "params_M": 35.641826,
+  "precision_mode": "autocast",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch": "2.6.0+cu124"
+}

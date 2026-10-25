@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pt
+*.pth
+*.onnx
+*.engine
+data/
+runs/
+.ipynb_checkpoints/
+results/logs/

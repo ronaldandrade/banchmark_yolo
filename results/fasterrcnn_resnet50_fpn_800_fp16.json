@@ -1,0 +1,25 @@
+{
+  "model": "fasterrcnn_resnet50_fpn",
+  "imgsz": 800,
+  "half": true,
+  "n_images": 5000,
+  "mAP50-95": 0.37141794750185353,
+  "mAP50": 0.5899984086032146,
+  "mAP75": 0.39875793525361924,
+  "AP_small": 0.21352935410328716,
+  "AP_medium": 0.40523829907603404,
+  "AP_large": 0.4826310416276475,
+  "AR100": 0.530922844176756,
+  "latency_ms": {
+    "total": {
+      "median": 96.18241899988789,
+      "p95": 111.50321294717287
+    }
+  },
+  "fps_total": 10.396910479046754,
+  "peak_gpu_mem_mb": 700.52978515625,
+  "params_M": 41.755286,
+  "precision_mode": "autocast",
+  "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "torch": "2.6.0+cu124"
+}

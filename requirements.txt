@@ -1,0 +1,22 @@
+# Instalar torch/torchvision ANTES, com o índice CUDA 12.4, torch==2.6.0 (ver setup_env.sh)
+ultralytics
+rfdetr
+transformers
+timm
+pycocotools
+supervision
+opencv-python-headless
+onnx
+onnxruntime-gpu
+thop
+numpy
+pandas
+matplotlib
+seaborn
+pyyaml
+tqdm
+psutil
+jupyterlab
+ipykernel
+tabulate
+adjustText
