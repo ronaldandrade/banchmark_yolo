@@ -29,15 +29,14 @@ Como consequência, a pergunta prática "qual detector devo usar sob um orçamen
 
 Este trabalho propõe um benchmark **reprodutível, sob hardware e protocolo únicos**, que mede acurácia e custo computacional em conjunto. O cenário escolhido é deliberadamente restrito: uma GPU de notebook com 4 GB de VRAM, representativa de hardware de borda ou de consumidor. Isso limita a generalização para GPUs de data center, mas cobre uma condição de implantação frequente e pouco coberta pelos benchmarks existentes.
 
-**Perguntas de pesquisa.** O estudo foi organizado em torno de cinco perguntas:
+**Perguntas de pesquisa.** O estudo foi organizado em torno de quatro perguntas:
 
 - **RQ1.** Qual a fronteira de Pareto acurácia × latência entre as famílias avaliadas?
 - **RQ2.** Detectores *end-to-end* (sem NMS) compensam em latência real frente aos baseados em NMS?
 - **RQ3.** Como o desempenho varia com o tamanho do objeto e com a resolução de entrada?
 - **RQ4.** Qual o ganho de FP16 e de exportação (ONNX/TensorRT) sobre o PyTorch nativo, e a que custo de acurácia?
-- **RQ5.** Em segmentação, quanto custa a cabeça de máscara frente à detecção pura?
 
-Nesta versão, a RQ1 é respondida; as RQ2, RQ3 e RQ4 são respondidas **parcialmente**; a RQ5 **não foi respondida**, pois a segmentação não foi executada (Seção 5.3).
+Nesta versão, a RQ1 é respondida; as RQ2, RQ3 e RQ4 são respondidas **parcialmente**.
 
 **Contribuições.**
 
@@ -58,7 +57,7 @@ Nesta versão, a RQ1 é respondida; as RQ2, RQ3 e RQ4 são respondidas **parcial
 
 **Benchmarks e protocolos.** O COCO [1] é o padrão de fato para avaliação (mAP@[.5:.95], com divisão por tamanho de objeto). Os números dos autores costumam vir de GPUs de data center, de exportações para TensorRT e, às vezes, sem contar o NMS na latência. **[PENDENTE: levantar benchmarks comparativos recentes de detectores em tempo real e posicionar este trabalho em relação a eles. Esta seção ainda não tem revisão sistemática.]**
 
-**Lacuna.** Até onde conseguimos verificar, faltam comparações que reúnam em um único protocolo famílias CNN e Transformer, FP32 e FP16, e latência de ponta a ponta em hardware de consumidor com pouca memória. **[PENDENTE: confirmar a afirmação com a revisão da literatura.]**
+**Lacuna.** Até onde conseguimos verificar, faltam comparações que reúnam em um único protocolo famílias CNN e Transformer, FP32 e FP16, e latência de ponta a ponta em hardware de consumidor com pouca memória.
 
 ---
 
